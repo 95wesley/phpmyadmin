@@ -38,6 +38,9 @@ $cfg['blowfish_secret'] = '8d9399030ac961dc3d933dc66a970007';
 $cfg['DefaultLang'] = 'pt_BR';
 $cfg['Lang'] = 'pt_BR';
 
+/* Desativa o tempo limite de execução do phpMyAdmin (0 = sem limite) */
+$cfg['ExecTimeLimit'] = 0;
+
 $i = 0;
 
 /* Servidor MySQL dinâmico via .env */

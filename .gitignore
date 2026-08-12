@@ -6,6 +6,10 @@
 /public/vendor/
 /vendor/
 
+# Cache do phpMyAdmin (Twig templates compilados)
+/public/tmp/
+/public/tmp/*
+
 # OS e IDEs
 .DS_Store
 .idea/
