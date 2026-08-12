@@ -5,7 +5,7 @@ get_env() {
     local key=$1
     local default_val=$2
     if [ -f .env ]; then
-        local val=$(grep -E "^${key}=" .env | cut -d '=' -f2- | tr -d " \t\n\r\0\x0B\"'")
+        local val=$(grep -E "^${key}=" .env | tr -d '\r' | cut -d '=' -f2- | cut -d '#' -f1 | xargs)
         if [ -n "$val" ]; then
             echo "$val"
             return
