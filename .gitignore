@@ -1,0 +1,14 @@
+.env
+.env.local
+.env.*.local
+
+# Vendor / Composer (se houver)
+/public/vendor/
+/vendor/
+
+# OS e IDEs
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.tmp
